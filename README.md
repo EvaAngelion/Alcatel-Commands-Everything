@@ -267,10 +267,10 @@ aaa authentication ftp "local"
 aaa authentication snmp "local"
 
 # 801.1X authentication servers
-aaa authentication 802.1x radius_srv1 radius_srv2
+aaa device-authentication 802.1x radius_srv1 radius_srv2
 
 # MAC base authentication servers (used for devices that can't do 802.1X like IP-Phones)
-aaa authentication mac radius_srv1 radius_srv2
+aaa device-authentication mac radius_srv1 radius_srv2
 
 # AVLAN:
 #   Authentication portal in the switch. By default, last IP of the subnet.
